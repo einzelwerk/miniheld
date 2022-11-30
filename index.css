@@ -1,0 +1,878 @@
+/* base */
+
+.section-title {
+  font-size: 48px;
+  line-height: 122%;
+  margin-bottom: 44px;
+  font-family: "ConcertOne";
+  max-width: 670px;
+  line-height: 122%;
+  font-weight: 400;
+}
+
+.section-title.section-title--white {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container--right-mobile {
+    padding-right: 0;
+  }
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+.custom-slider-pagination {
+  position: static;
+  margin-top: 16px;
+}
+
+.custom-slider-pagination .swiper-pagination-bullet {
+  background: #082050;
+  opacity: 1;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.custom-slider-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+}
+
+/* HERO */
+
+.hero {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 608px;
+  background: #fbfbfb;
+  font-family: "ConcertOne";
+}
+
+.hero__text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  font-size: 160px;
+  font-weight: 400;
+  color: #3777fb;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #121926;
+  line-height: 1;
+  font-family: "ConcertOne";
+  text-align: center;
+}
+
+.hero__title span {
+  color: #82d12e;
+}
+
+.hero__desc {
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 20px;
+  color: #4b5565;
+}
+
+.hero__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media (min-width: 1680px) {
+  .hero {
+    min-height: 686px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 510px;
+  }
+  .hero__title {
+    font-size: 64px;
+    -webkit-text-stroke-width: 1px;
+  }
+  .hero__desc {
+    font-size: 24px;
+    color: #4b5565;
+  }
+}
+
+@media (max-width: 556px) {
+  .hero {
+    min-height: 354px;
+  }
+}
+
+/* OFFERS */
+
+.offers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 32px;
+}
+
+.offers__item {
+  height: 0;
+  padding-bottom: calc(50% - 4px);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: 0px 8px 24px rgba(28, 52, 115, 0.2);
+
+  color: #121926;
+  grid-column: span 2;
+}
+
+.offers__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  overflow: hidden;
+}
+
+.offers__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offers__link {
+  transition: border-radius 0.5s;
+  border: 2px solid #051c4a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.offers__link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.offers__item:hover:after {
+  transform: translate(-8px, -8px);
+}
+.offers__item:first-child {
+  grid-column: 1;
+  padding: 0;
+  height: 100%;
+}
+
+.offers__item:nth-child(2) {
+  grid-column: span 1;
+  padding: 0;
+  height: 100%;
+}
+
+.offers__item:nth-child(n + 8) {
+  grid-column: span 1;
+  padding-bottom: calc(100% - 4px);
+}
+
+.offers__item:nth-child(n + 8) .offers__title {
+  max-width: 170px;
+}
+
+.offers__item.offers__item--color-white {
+  color: #fff;
+}
+
+.offers__item:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #051c4a;
+  border-radius: 20px;
+  bottom: -8px;
+  right: -8px;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.offers__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.offers__content.offers__content--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.offers__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-family: "ConcertOne";
+  color: inherit;
+  font-weight: 400;
+  max-width: 275px;
+}
+
+.offers__title span {
+  color: #fff;
+}
+
+.offers__desc {
+  font-size: 18px;
+  line-height: 133%;
+  margin-bottom: 16px;
+  font-family: "ConcertOne";
+  color: inherit;
+  font-weight: 400;
+  max-width: 320px;
+}
+
+.offers__label {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  width: 74px;
+  height: 40px;
+  background-image: url(./img/neu.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.offers__btn {
+  background: var(--btn-color);
+  color: #f5f8ff;
+  padding: 11px 16px;
+  font-size: 14px;
+  border-radius: 12px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "ConcertOne";
+  transition: transform 0.3s;
+  line-height: 1;
+}
+
+.offers__btn:hover {
+  transform: scale(1.2);
+}
+
+.offers__btn:hover {
+  text-decoration: none;
+  color: #f5f8ff;
+}
+
+.offers__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  width: 158px;
+}
+
+.offers__logo img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .offers {
+    gap: 12px 22px;
+  }
+  .offers__item:first-child {
+    grid-column: span 2;
+    padding-bottom: calc(50% - 4px);
+  }
+
+  .offers__item:nth-child(2) {
+    grid-column: span 2;
+    padding-bottom: calc(50% - 4px);
+  }
+
+  .offers__item:nth-child(n + 8) {
+    grid-column: span 2;
+    padding-bottom: calc(50% - 4px);
+  }
+  .offers__title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    max-width: 210px;
+  }
+  .offers__desc {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .offers__item:nth-child(n + 8) {
+    grid-column: span 1;
+    padding-bottom: calc(100% - 4px);
+  }
+  .offers__content.offers__content--center {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 556px) {
+  .offers {
+    gap: 15px 12px;
+  }
+  .offers__item {
+    padding-bottom: calc(50% - 4px);
+  }
+
+  .offers__logo {
+    max-width: 84px;
+    height: auto;
+  }
+  .offers__logo img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+  .offers__content {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 12px 20px;
+  }
+  .offers__title {
+    margin: 0;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .offers__desc {
+    max-width: 210px;
+    margin: 8px 0 0;
+  }
+  .offers__btn {
+    margin-top: 12px;
+  }
+  .offers__item:nth-child(n + 8) .offers__content {
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .offers__item:nth-child(n + 8) .offers__btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .offers__item:nth-child(n + 8) .offers__logo {
+    left: 8px;
+    top: 8px;
+  }
+  .offers__item:nth-child(n + 8) .offers__title {
+    font-size: 16px;
+    margin-bottom: 4px;
+    line-height: 1;
+  }
+  .offers__item:nth-child(n + 8) .offers__desc {
+    margin: 0;
+  }
+}
+
+/* puzzles */
+.free-puzzles {
+  font-family: "ConcertOne";
+  overflow: visible;
+}
+
+.free-puzzles__image img {
+  width: 100%;
+}
+
+.puzzles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .puzzles-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.puzzles-grid__item {
+  background: var(--card-color);
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #051c4a;
+  border-radius: 16px;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: inset 3px 3px 0px #cadcff;
+  height: auto;
+  transition: 0.5s;
+}
+
+.puzzles-grid__item:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: inset -3px -3px 0px #4e79ce;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.puzzles-grid__item:before {
+  content: "";
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  display: block;
+  background: #051c4a;
+  border-radius: 20px;
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
+.puzzles-grid__item:hover:before {
+  transform: translate3d(-8px, -8px, -1px);
+}
+
+.puzzles-grid__link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.puzzles-grid__link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.puzzles-grid__text {
+  padding: 32px 32px 26px;
+}
+
+.puzzles-grid__title {
+  color: var(--white);
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: inherit;
+}
+.puzzles-grid__desc {
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  font-family: inherit;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 325px;
+}
+
+.puzzles-grid__image {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.puzzles-grid__image img {
+  position: absolute;
+  top: 0;
+  width: auto;
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+@media (max-width: 1024px) {
+  .free-puzzles__heading {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .free-puzzles__title {
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .free-puzzles__image {
+    margin-bottom: 12px;
+  }
+
+  .puzzles-grid__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .puzzles-grid__desc {
+    font-size: 32px;
+  }
+
+  .puzzles-grid__text {
+    padding: 24px 24px 4px;
+  }
+}
+
+/* delivery */
+
+.delivery-banner {
+  transform-style: preserve-3d;
+  position: relative;
+  background: #fff;
+
+  font-family: "ConcertOne";
+  border-radius: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.delivery-banner__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border: 2px solid #041c4c;
+  border-radius: 16px;
+  height: 300px;
+}
+
+.delivery-banner:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  display: block;
+  background: #051c4a;
+  border-radius: 20px;
+  transform: translateZ(-1px);
+}
+
+.delivery-banner__text {
+  font-size: 48px;
+  line-height: 60px;
+  padding-left: 80px;
+  padding-right: 120px;
+  color: #121926;
+}
+.delivery-banner__text span {
+  color: #155eef;
+}
+
+.delivery-banner__image {
+  width: 35%;
+  flex: none;
+  /* padding-left: 93px; */
+  position: relative;
+  background: url(./img/circles.svg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  height: 100%;
+  background-position: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery-banner__image img {
+  width: 220px;
+  height: 190px;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .delivery-banner__text {
+    font-size: 32px;
+    line-height: 125%;
+    padding: 0 1rem;
+  }
+
+  .delivery-banner__image {
+    background-size: 140%;
+  }
+}
+
+@media (max-width: 768px) {
+  .delivery-banner__inner {
+    flex-direction: column;
+    height: auto;
+  }
+  .delivery-banner__image {
+    width: 100%;
+
+    background-position: 50% 100%;
+    padding: 2rem 0;
+  }
+  .delivery-banner__text {
+    margin-top: 18px;
+    padding: 0 24px 20px;
+  }
+}
+
+/* features */
+
+.features-slider {
+  padding-bottom: 8px;
+  padding-right: 8px;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 24px;
+  transform-style: preserve-3d;
+  position: relative;
+  background: #2e79fb;
+  box-shadow: inset 3px 3px 0px #cadcff;
+  border: 2px solid #051c4a;
+  border-radius: 16px;
+  height: auto;
+  color: #fff;
+}
+
+.features__item:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: inset -3px -3px 0px #4e79ce;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.features__item:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  display: block;
+  background: #051c4a;
+  border-radius: 20px;
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
+.features__image {
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+.features__image img {
+  max-width: 100%;
+}
+
+.features__title {
+  font-size: 24px;
+  margin: 0;
+  margin-top: auto;
+  color: inherit;
+  font-family: "ConcertOne";
+  font-weight: 400;
+}
+.features__desc {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  margin-top: 12px;
+  font-family: "ConcertOne";
+}
+
+.features__desc a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* reviews */
+
+.reviews-wrapper {
+  overflow: visible;
+}
+
+.reviews {
+  overflow-x: visible;
+}
+
+.reviews__item {
+  background: #fff;
+  position: relative;
+  transform-style: preserve-3d;
+  border: 2px solid #051c4a;
+  border-radius: 16px;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews__item:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  display: block;
+  background: #051c4a;
+  border-radius: 20px;
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
+.reviews__rating {
+  margin-bottom: 20px;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating__star {
+  width: 24px;
+  height: 24px;
+}
+
+.rating__star img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.reviews__text {
+  font-size: 18px;
+  color: #121926;
+  line-height: 122%;
+  font-family: "ConcertOne";
+  margin: 0;
+  padding-right: 20px;
+  margin-bottom: auto;
+}
+
+.reviews__author {
+  color: #9aa4b2;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 12px;
+  margin-bottom: auto;
+}
+
+.reviews__logo {
+  margin-top: 30px;
+}
+
+@media (max-width: 556px) {
+  .reviews__text {
+    font-size: 16px;
+  }
+}
+
+/* payments */
+
+.payments-slider {
+  overflow: visible;
+}
+
+.payments__item {
+  background: #fff;
+  position: relative;
+  transform-style: preserve-3d;
+  border: 2px solid #051c4a;
+  border-radius: 16px;
+  padding: 20px 20px 24px;
+}
+
+.payments__item:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  display: block;
+  background: #051c4a;
+  border-radius: 20px;
+  transform: translateZ(-1px);
+  z-index: -1;
+}
+
+.payments__image {
+  margin-bottom: 24px;
+}
+
+.payments__title {
+  font-size: 24px;
+  font-family: "ConcertOne";
+  margin: 0;
+  margin-top: 63px;
+  font-weight: 400;
+}
+
+.payments__desc {
+  font-family: "ConcertOne";
+  color: #697586;
+  line-height: 150%;
+  font-size: 16px;
+}

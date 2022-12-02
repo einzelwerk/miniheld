@@ -721,7 +721,8 @@
   transition: border-radius 0.5s;
 }
 
-.features__item:hover, .features__item:hover a {
+.features__item:hover,
+.features__item:hover a {
   color: #fff;
   text-decoration: none;
 }
@@ -944,7 +945,7 @@
   font-size: 24px;
   font-family: "ConcertOne";
   margin: 0;
-  margin-top: 63px;
+  margin-top: 15px;
   font-weight: 400;
 }
 

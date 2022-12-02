@@ -579,6 +579,7 @@
 /* delivery */
 
 .delivery-banner {
+  display: block;
   transform-style: preserve-3d;
   position: relative;
   background: #fff;
@@ -587,6 +588,10 @@
   border-radius: 16px;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.delivery-banner:hover {
+  text-decoration: none;
 }
 
 .delivery-banner__inner {
@@ -635,6 +640,11 @@
   padding-right: 120px;
   color: #121926;
 }
+
+.delivery-banner__text a:hover {
+  text-decoration: none;
+}
+
 .delivery-banner__text span {
   color: #155eef;
 }
@@ -709,6 +719,16 @@
   height: auto;
   color: #fff;
   transition: border-radius 0.5s;
+}
+
+.features__item:hover, .features__item:hover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.features__title a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .features__item:after {
@@ -886,6 +906,10 @@
   border-radius: 16px;
   padding: 20px 20px 24px;
   transition: border-radius 0.5s;
+}
+
+.payments__item:hover {
+  text-decoration: none;
 }
 
 .payments__item:before {

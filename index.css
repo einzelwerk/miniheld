@@ -53,6 +53,7 @@
   align-items: center;
   justify-content: space-between;
   --category-gap: 40px;
+  min-height: 364px;
 }
 
 .hero-category__text {
@@ -64,6 +65,8 @@
 .hero-category__image {
   max-width: 660px;
   padding: var(--category-gap);
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .hero-category__image img {

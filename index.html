@@ -12,6 +12,23 @@
     <title>Document</title>
   </head>
   <body>
+    <section>
+      <div class="container">
+        <div class="hero-category" style="background: #2970ff">
+          <div class="hero-category__text">
+            <h1 class="hero-category__title">Spielzeug</h1>
+            <p class="hero-category__desc">
+              Kinderspielzeug von Paw Patrol, Disney, Harry Potter, Marvel, Miraculous, L.O.L und vieles mehr! Auch Rollenspielzeug wie Kinderküchen,
+              Puppenhäuser, Polizei, Arzt und Soldat findest du bei uns.
+            </p>
+          </div>
+          <div class="hero-category__image">
+            <img src="https://shop.miniheld.de/media/13/1f/c9/1669715143/Kinderpielzeug_miniHeld.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- hero -->
     <section class="hero">
       <div class="hero__text">
@@ -22,7 +39,7 @@
         </p>
       </div>
       <picture class="hero__image">
-        <source media="(max-width:556px)" srcset="./img/hero-m.svg" />
+        <source media="(max-width:992px)" srcset="./img/hero-m.svg" />
         <img src="./img/hero.svg" alt="" />
       </picture>
     </section>
@@ -35,7 +52,11 @@
           <article class="offers__item">
             <a href="" class="offers__link">
               <picture class="offers__image">
+                <<<<<<< HEAD
+                <source media="(max-width:992px )" srcset="./img/offers/mobile/11.jpg" />
+                =======
                 <source media="(max-width:992px )" srcset="./img/offers/tablet/11.jpg" />
+                >>>>>>> 6efafbe727ea8d908df4ddd0dae69bf175bf3c70
                 <img src="./img/offers/11.jpg" alt="" />
               </picture>
               <div class="offers__content">
@@ -48,7 +69,11 @@
           <article class="offers__item">
             <a href="" class="offers__link">
               <picture class="offers__image">
+                <<<<<<< HEAD
+                <source media="(max-width:992px )" srcset="./img/offers/mobile/1.jpg" />
+                =======
                 <source media="(max-width:992px )" srcset="./img/offers/tablet/1.jpg" />
+                >>>>>>> 6efafbe727ea8d908df4ddd0dae69bf175bf3c70
                 <img src="./img/offers/1.jpg" alt="" />
               </picture>
               <div class="offers__content">
@@ -61,7 +86,7 @@
           <article class="offers__item">
             <a href="" class="offers__link">
               <picture class="offers__image">
-                <source media="(max-width:556px )" srcset="./img/offers/mobile/2.jpg" />
+                <source media="(max-width:992px )" srcset="./img/offers/mobile/2.jpg" />
                 <img src="./img/offers/2.jpg" alt="" />
               </picture>
               <div class="offers__content">
@@ -73,7 +98,7 @@
           <article class="offers__item">
             <a href="" class="offers__link">
               <picture class="offers__image">
-                <source media="(max-width:556px )" srcset="./img/offers/mobile/3.jpg" />
+                <source media="(max-width:992px )" srcset="./img/offers/mobile/3.jpg" />
                 <img src="./img/offers/3.jpg" alt="" />
               </picture>
               <div class="offers__content">
@@ -86,7 +111,7 @@
           <article class="offers__item">
             <a href="" class="offers__link">
               <picture class="offers__image">
-                <source media="(max-width:556px )" srcset="./img/offers/mobile/4.jpg" />
+                <source media="(max-width:992px )" srcset="./img/offers/mobile/4.jpg" />
                 <img src="./img/offers/4.jpg" alt="" />
               </picture>
               <div class="offers__content">
@@ -467,6 +492,10 @@
             el: featuresSlider.querySelector(".swiper-pagination"),
           },
           breakpoints: {
+            556: {
+              pagination: false,
+              slidesPerView: 2,
+            },
             1024: {
               pagination: false,
               slidesPerView: 4,
@@ -488,6 +517,10 @@
             forceToAxis: true,
           },
           breakpoints: {
+            556: {
+              pagination: false,
+              slidesPerView: 2,
+            },
             1024: {
               pagination: false,
               spaceBetween: 32,
@@ -505,6 +538,10 @@
             el: paymentsSlider.querySelector(".swiper-pagination"),
           },
           breakpoints: {
+            556: {
+              pagination: false,
+              slidesPerView: 2,
+            },
             1024: {
               pagination: false,
               spaceBetween: 32,

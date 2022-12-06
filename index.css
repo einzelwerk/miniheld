@@ -58,7 +58,7 @@
 .hero-category__text {
   padding: var(--category-gap);
   width: 100%;
-  max-width: 520px;
+  max-width: 560px;
 }
 
 .hero-category__image {

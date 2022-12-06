@@ -739,6 +739,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 14px;
 }
 
 .delivery-banner__image img {
